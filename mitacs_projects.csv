@@ -1,0 +1,421 @@
+Project_ID,Title,Description
+51305,Design of special optical fibers via AI inverse-design methods,"Project ID 51305
+Design of special optical fibers via AI inverse-design methods
+The goal of this project is to apply the inverse design optimization method to optical fiber design in order to explore unconventional and high-performance designs. The work will involve using existing inverse design algorithms and libraries (e.g., in Python or Matlab) and adapting them to the project's objective: optimizing the predicted optical properties of fibers for high-speed communication. These optical properties will be calculated (i.e., validated) using finite element analysis software (e.g., COMSOL Multiphysics). Communication and programming work to run certain long calculations via a supercomputer cluster hosted at Calcul Québec will also be investigated.
+Faculty supervisor:  BoraUng
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: MONTREAL, Québec
+Language: English
+Preferred start date: 2027-05-10 (yyyy-mm-dd)
+View Detail
+Apply"
+51306,High-performance practical blockchain systems,"Project ID 51306
+High-performance practical blockchain systems
+This is a multi-faceted project on improving core blockchain components in order to improve its performance. Students will be in charge of investigating one or more aspects of blockchains, formulating novel problems, designing, implementing, and evaluating their solution. The objectives of this project include the following. Note that students are expected to choose a subset of goals to fulfill: 1- Investigate relevant blockchain use cases in the public and private sectors, identify suitable blockchain platforms, and develop Proof-of-Concept applications. This includes: cryptocurrencies, NFTs, supply chain traceability, etc. 2- Develop and improve upon existing consensus algorithms, such as Proof-of-Work, PBFT, to support more peers, provide a higher transaction throughput, and deliver predictable commit times. 3- Improve the blockchain data structure (e.g., Merkle tree) for fast insertion, querying, and compressibility. Propose new blockchain structures (e.g., tree) with increased transaction parallelism. 4- Propose a data structure for storing off-chain information, with on-chain verification mechanisms, and a dynamic algorithm for offloading data. 5- Study the effect of networking on blockchain commit time, resilience to attacks, and fork rate. Develop networking protocols for enhanced performance. 6- Create blockchain middleware, delivering reusable services in a reliable and safe manner, such as messaging, identity management, replication, etc. 7- Integrate quantum technology to improve the security of blockchains, such as QRNG (quantum random number generation)
+Faculty supervisor:  KaiwenZhang
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montreal, Québec
+Language: Either English or French
+Preferred start date: 2027-05-03 (yyyy-mm-dd)
+View Detail
+Apply"
+51543,Design and characterization of an Integrated circuit test setup,"Project ID 51543
+Design and characterization of an Integrated circuit test setup
+Temperature has an effect on the performance of all electronics systems. This effect of temperature on the performance of integrated circuits is usually simulated but rarely experimentaly measured and reported. Accordingly this project aims to devellop a thermally stable environnent in which the temperature can be precisely controlled in order to quantify the impact of the temperature on the performance of integrated circuits The project will be conducted using commercial of the shelf electronics components. The deliverable of this project include the following items: A thermally stable environment in which to test integrated circuit. A computer control of that environment. A report an user manual for the system.
+Faculty supervisor:  RichardAl Hadi
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montreal, Québec
+Language: Either English or French
+Preferred start date: 2027-05-03 (yyyy-mm-dd)
+View Detail
+Apply"
+51702,Graph-RAG for Disaster Management and Emergency Intervention During Extreme Wind Events,"Project ID 51702
+Graph-RAG for Disaster Management and Emergency Intervention During Extreme Wind Events
+Extreme wind events such as hurricanes and tornadoes can cause severe damage to buildings, critical infrastructure, transportation networks, and urban vegetation, while also disrupting emergency response operations. Effective disaster management during such events requires rapid access to reliable, multi-source information, including hazard forecasts, infrastructure data, historical damage records, emergency protocols, and real-time field observations. However, these data are often fragmented across heterogeneous formats and sources, which limits their direct use for decision support. This project aims to develop an intelligent Graph Retrieval-Augmented Generation (Graph-RAG) framework for disaster management and intervention during extreme wind events. The proposed system will integrate structured and unstructured data into a graph-based knowledge representation capturing relationships among hazards, exposed assets, vulnerabilities, damage mechanisms, and intervention strategies. On top of this graph, a retrieval-augmented generation pipeline will be designed to support advanced querying, reasoning, and context-aware decision assistance. The framework will be applied to wind-related disaster scenarios involving hurricanes and tornadoes. Example use cases include identifying vulnerable infrastructure and urban elements, tracing likely cascading impacts such as road blockage or power interruption, retrieving relevant emergency procedures, and generating intervention recommendations for response and recovery planning. The project will combine concepts from natural language processing, knowledge graphs, machine learning, and disaster risk analysis. The expected outcome is a prototype decision-support tool that improves situational awareness and facilitates more informed and timely intervention during extreme wind events.
+Faculty supervisor:  RedaSnaiki
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montreal, Québec
+Language: English
+Preferred start date: 2027-05-10 (yyyy-mm-dd)
+View Detail
+Apply"
+51703,Reinforcement Learning for Adaptive Disaster Mitigation and Climate Resilience,"Project ID 51703
+Reinforcement Learning for Adaptive Disaster Mitigation and Climate Resilience
+Natural hazards such as extreme wind events, extreme heat, flooding, and other climate-related hazards can cause major disruptions to buildings, infrastructure systems, public services, and community wellbeing. Effective disaster mitigation requires adaptive decision-making under uncertainty, particularly when emergency managers and stakeholders must allocate limited resources, prioritize actions, and respond to evolving conditions in real time. This project aims to develop an advanced reinforcement learning (RL) framework for disaster mitigation and resilient intervention under multi-hazard conditions. The objective is to investigate how RL-based agents can learn efficient strategies for reducing risk, limiting cascading impacts, and improving the resilience of exposed systems before, during, and after hazardous events. The framework will be designed to support sequential decision-making problems such as resource allocation, infrastructure protection, evacuation support, intervention prioritization, and recovery planning. The project will consider applications to different hazard types, with representative case studies such as extreme wind events affecting infrastructure and extreme heat events affecting urban systems and vulnerable populations. Depending on the research scope, the study may explore deep reinforcement learning, multi-agent reinforcement learning, or constrained reinforcement learning approaches. The expected outcome is a computational decision-support framework capable of identifying adaptive mitigation strategies that enhance resilience, reduce losses, and support more effective disaster management across a range of hazard scenarios.
+Faculty supervisor:  RedaSnaiki
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montreal, Québec
+Language: English
+Preferred start date: 2027-05-10 (yyyy-mm-dd)
+View Detail
+Apply"
+51704,AI-Driven Rapid Simulation of Urban Wind Flow in Cities Using Graph Neural Networks,"Project ID 51704
+AI-Driven Rapid Simulation of Urban Wind Flow in Cities Using Graph Neural Networks
+Accurate prediction of urban wind flow is essential for many applications, including pedestrian wind comfort and safety, dispersion of pollutants, urban heat mitigation, and the wind-resilient design of buildings and infrastructure. However, high-fidelity computational fluid dynamics (CFD) simulations of wind flow in complex urban environments are often computationally expensive and may not be practical for rapid analysis, large-scale parametric studies, or real-time decision support. This project aims to develop an artificial intelligence framework for rapid simulation of urban wind flow in cities, with a particular focus on graph neural networks (GNNs) and related geometric deep learning approaches. The idea is to represent urban environments as graphs, where buildings, streets, and other spatial entities are encoded as interconnected nodes and edges, allowing the model to learn how urban morphology influences local wind patterns. By training on simulation or experimental datasets, the proposed AI model will predict key wind-flow quantities, such as local wind speed, flow direction, acceleration zones, or sheltered regions, at a fraction of the cost of conventional numerical simulations. The project will investigate how AI can serve as a fast surrogate model for urban wind analysis while preserving physically meaningful spatial relationships. Potential applications include rapid screening of city districts, sensitivity analyses for urban design, support for climate-adaptive planning, and enhanced assessment of wind-related risks in dense urban areas. The expected outcome is a computational framework that combines accuracy, efficiency, and scalability for next-generation urban wind modeling.
+Faculty supervisor:  RedaSnaiki
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montreal, Québec
+Language: English
+Preferred start date: 2027-05-10 (yyyy-mm-dd)
+View Detail
+Apply"
+51916,Multi-objective optimization of resilient of climatic resilient supply chains,"Project ID 51916
+Multi-objective optimization of resilient of climatic resilient supply chains
+This project focuses on developing an optimization framework (based on math modeling, heuristics and/or simulation) to balance efficiency and robustness in global logistics under the increasing threat of climate change. The student will design and implement a multi-objective optimization model aimed at minimizing operational costs while maximizing the ""resilience"" of the supply chain against extreme weather events and shifting environmental regulations. Math modeling, heuristic or hybrid simulation will be used to analyze trade-offs between operational scenarios to evaluate climate-induced disruptions.
+Faculty supervisor:  JairoMontoya Torres
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montréal, Québec
+Language: Either English or French
+Preferred start date: 2027-05-03 (yyyy-mm-dd)
+View Detail
+Apply"
+52781,Modular and Reusable Flight Software Architecture for machine learning on Small Satellites,"Project ID 52781
+Modular and Reusable Flight Software Architecture for machine learning on Small Satellites
+This research project aims to advance the development of autonomous small satellite systems by leveraging a reusable software framework to streamline the creation of flight software for space missions on low-power embedded processors. The focus is on integrating onboard artificial intelligence (AI) capabilities into the flight software architecture of small satellites, such as CubeSats, to enhance their autonomy, adaptability, and resilience in space environments. Traditionally, flight software development is a time-intensive process requiring mission-specific customization and extensive testing. By employing a modular and extensible software framework from NASA and ESA, this project will significantly reduce development time while ensuring reliability and standardization across missions. Interns will contribute to adapting and extending this framework to support AI-driven functionalities, including real-time data analysis, anomaly detection, decision-making, and fault tolerance onboard the spacecraft. The project provides an interdisciplinary learning experience at the intersection of aerospace engineering, embedded systems, and machine learning. Interns will gain hands-on experience with flight software development, AI integration techniques, and testing in simulated or hardware-in-the-loop environments, preparing them for careers in cutting-edge space technology development.
+Faculty supervisor:  Jesus Gonzalez Llorente
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montreal, Québec
+Language: English
+Preferred start date: 2027-05-17 (yyyy-mm-dd)
+View Detail
+Apply"
+52811,Extending an Open-Source IDE Extension for Real-Time TypeScript Code Modeling,"Project ID 52811
+Extending an Open-Source IDE Extension for Real-Time TypeScript Code Modeling
+Analyser la conception des logiciels orientés objet (Java, C#, C++, TypeScript, etc.) du point de vue de la réutilisation et de la stabilité à long terme. Proposition de stratégies empiriques permettant aux développeurs de produire un code plus facile à réutiliser à court et à long terme.
+Faculty supervisor:  ChristopherFuhrman
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montreal, Québec
+Language: Either English or French
+Preferred start date: 2027-05-03 (yyyy-mm-dd)
+View Detail
+Apply"
+52814,Extending an open-source static analysis tool (parser) for TypeScript,"Project ID 52814
+Extending an open-source static analysis tool (parser) for TypeScript
+The intern will improve the features of an open-source static analysis tool (parser) for the TypeScript language. This tool is used in a chain of tools used for doing research involving data-mining of object-oriented (TypeScript, Java, Python) code for understanding the evolution of software projects on popular web frameworks such as Angular and React. The current version of the tool can be found at https://github.com/fuhrmanator/FamixTypeScriptImporter
+Faculty supervisor:  ChristopherFuhrman
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montreal, Québec
+Language: Either English or French
+Preferred start date: 2027-05-03 (yyyy-mm-dd)
+View Detail
+Apply"
+53342,Développement d'un Agent IA Intelligent avec RAG Enrichi : De la Vectorisation à l'Intelligence Contextuelle,"Project ID 53342
+Développement d'un Agent IA Intelligent avec RAG Enrichi : De la Vectorisation à l'Intelligence Contextuelle
+Aujourd’hui, les IA génératives transforment les industries, mais elles ont besoin du RAG (Retrieval-Augmented Generation) pour être fiables et contextuelles. L'étudiant créera un agent IA qui « pense » comme un expert dans son domaine choisi, en récupérant des informations pertinentes dans une base de connaissances personnalisée. Ainsi, ce projet vise à : - comprendre les Generative AI (comme GPT ou Llama) et leurs limites (hallucinations, manque de contexte). - Maîtriser la construction d'un agent IA autonome via LangChain. - Apprendre la vectorisation d'embeddings, l'enrichissement RAG et l'ingénierie de prompts. - Appliquer ces concepts à un cas d'usage réel choisi par l’étudiant/les étudiants (ex. : assistant médical, chatbot e-commerce, analyseur de code, etc.) - Il est possible qu’à la fin on utilise un système multi-agents en se basant sur des frameworks tels que LangGraph ou LangCrew.
+Faculty supervisor:  RamiLangar
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montréal, Québec
+Language: French
+Preferred start date: 2027-06-01 (yyyy-mm-dd)
+View Detail
+Apply"
+53436,Agent IA Génératif pour une Sélection Adaptative de Modulation dans les Réseaux Hybrides Terrestres et Non-Terrestres,"Project ID 53436
+Agent IA Génératif pour une Sélection Adaptative de Modulation dans les Réseaux Hybrides Terrestres et Non-Terrestres
+Ce projet vise à développer un agent IA génératif capable d'analyser en temps réel la géométrie satellite-LEO (position latitude/longitude/altitude, angle d'élévation, vitesse relative, conditions de propagation) pour sélectionner automatiquement la modulation optimale (LR-FHSS DR8/DR9 vs LoRa SF7-SF12) minimisant le Packet Error Rate (PER) via analyse prédictive dans un réseau NTN (non terrestrial Network), LoRa-Satellite.
+Faculty supervisor:  RamiLangar
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montréal, Québec
+Language: French
+Preferred start date: 2027-06-01 (yyyy-mm-dd)
+View Detail
+Apply"
+53437,Optimisation de la gestion de mobilité dans un réseau 5G/6G en utilisant des algorithmes de Machine Learning,"Project ID 53437
+Optimisation de la gestion de mobilité dans un réseau 5G/6G en utilisant des algorithmes de Machine Learning
+Les réseaux radio mobiles de nouvelle génération (5G/B5G/6G) sont confrontés à de nouveaux défis, notamment le traitement d'un volume de données considérable et des exigences élevées en matière de qualité de service et d'expérience utilisateur. Les réseaux SDN (Software Defined Network) et les techniques de virtualisation offrent une centralisation du traitement et une grande capacité de scalabilité, ce qui rend la gestion des données plus efficace et économique pour les opérateurs de réseaux IT. Ayant démontré leur efficacité dans le réseau coeur, la technologie SDN et les techniques de virtualisation sont également introduites dans le réseau d'accès radio (RAN) de la 6G. Cela permettrait d'améliorer les KPI (Key Performance Indicator) des réseaux des opérateurs tout en réduisant les indicateurs CAPEX et OPEX. Ce projet vise à implémenter un contrôleur SDN dans un réseau d'accès virtualisé (V-RAN) sur la plateforme OAI (OpenAir Interface) pour optimiser la gestion de la mobilité dans le réseau, en particulier les procédures de sélection de cellules et de Handover. En outre, le projet utilisera les données réelles d'un opérateur de télécommunications afin d'appliquer un algorithme de Machine Learning (ML) pour prédire de manière optimisée la gestion de la mobilité dans le réseau.
+Faculty supervisor:  RamiLangar
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montréal, Québec
+Language: French
+Preferred start date: 2027-06-01 (yyyy-mm-dd)
+View Detail
+Apply"
+53533,3D Computer Graphics for Modeling and Generating 2D/3D Content with Applications in Visual Effects and Video Games,"Project ID 53533
+3D Computer Graphics for Modeling and Generating 2D/3D Content with Applications in Visual Effects and Video Games
+Research in 3D computer graphics, 3D objects acquisition and creation, as well as numerical geometry is ongoing in the Multimedia Lab at ÉTS. The topic of 3D modeling from images remains difficult. The project will investigate the use of generative methods, such as transformer-based diffusion models, to help in modeling 2D and 3D content such as textures and 3D objects. The project might also include the topic of 3D Gaussian splatting together with diffusion models toward modeling from images. The intern is expected to work on state-of-the-art approaches that generate and process 2D and 3D content. The intern will likely read state-of-the-art scientific papers and implement some of the algorithms found in these papers, with the help of the project team members. Equity, diversity, and inclusion (EDI) are values cherished by the research team. EDI is considered at every stage of the research process, including recruitment, and accommodations can be set in place to improve EDI. The intern will work in the Multimedia Lab of the École de technologie supérieure (ÉTS), Montreal, Canada. The intern could have access to a desk and a workstation with the required software for the internship. ÉTS is located in the heart of Montreal. It is easily accessible by public transportation and is walking distance to downtown Montreal.
+Faculty supervisor:  EricPaquette
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montreal, Québec
+Language: Either English or French
+Preferred start date: 2027-05-31 (yyyy-mm-dd)
+View Detail
+Apply"
+53737,Agentic AI-Human Collaboration in Software Development,"Project ID 53737
+Agentic AI-Human Collaboration in Software Development
+Agentic AI systems are rapidly transforming software development by autonomously performing tasks traditionally carried out by human developers. Modern AI agents can generate code, review pull requests, fix bugs, write tests, and assist with deployment activities. Despite these capabilities, important challenges remain regarding the interaction between human developers and AI agents. Developers must decide when to trust agent-generated outputs, how to supervise autonomous actions, and how to effectively collaborate with multiple AI agents during software development activities. This project aims to study and improve human-agent collaboration in software engineering. The student will investigate how developers interact with AI agents during coding, code review, debugging, and software maintenance tasks. Using empirical software engineering methods, the project will analyze developer-agent interactions, identify common collaboration challenges, and evaluate factors affecting productivity, trust, cognitive workload, and software quality. The project will involve collecting and analyzing data from software repositories, developer studies, and controlled experiments involving AI-assisted development tools. The student will also contribute to the design and evaluation of novel approaches that enhance transparency, explainability, and reliability of agentic AI systems. The outcomes of this project will provide valuable insights into the future of software development and contribute to the design of trustworthy and effective human-AI collaboration environments.
+Faculty supervisor:  AliOuni
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montréal, Québec
+Language: Either English or French
+Preferred start date: 2027-05-03 (yyyy-mm-dd)
+View Detail
+Apply"
+53846,Innovative interfaces for vibration authoring,"Project ID 53846
+Innovative interfaces for vibration authoring
+Vibrotactile devices are increasingly capable of producing rich and complex vibration patterns. The Apple Watch, for example, can produce a variety of vibrotactile icons that indicate different events, such as alarms and notifications. Designers currently have few tools to create such vibrotactile effects. In this project, we will experiment with novel interfaces to create complex vibrotactile effects. We will experiment with different input technologies to control various parameters of a vibrotactile pattern, much like a musical instrument controls sounds. This could for example include using our voice (microphone), the movement of our body (kinect, leap motion, or other motion tracking), or our interactions with an object or instrument.
+Faculty supervisor:  VincentLévesque
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montreal, Québec
+Language: Either English or French
+Preferred start date: 2027-05-02 (yyyy-mm-dd)
+View Detail
+Apply"
+53847,Visualizing haptic and tactile feedback,"Project ID 53847
+Visualizing haptic and tactile feedback
+Explaining the nature and meaning of haptic feedback using audio-visual media is often necessary but notoriously difficult. An online manual, for example, may need to explain the vibration patterns associated with different notifications on a smartwatch (e.g., “turn left” and “turn right” signals). Similarly, a television commercial may need to advertise the advanced vibration features of a new smartphone. As haptics researchers, we also face this challenge when trying to communicate haptic features in scientific publications such as conference papers and accompanying videos. Efficiently communicating haptic feedback in an audio-visual representation is a serious challenge that hasn’t been studied systematically to date. This project will explore how haptic feedback can be efficiently communicated in an audio-visual form. We will first survey how this challenge has been met in the past by looking at scientific papers, online tutorials, user manuals, advertisements and other audio-visual documents in which haptic features are communicated. We will then develop and experimentally evaluate different solutions to represent haptic features in audio-visual form. We will consider different types of haptic feedback, such as vibrations, forces, mid-air haptics (e.g., ultrahaptics.com), or surface haptics (e.g., tanvas.com). We will also consider different application domains, such as online tutorials and manuals, user interfaces (e.g., authoring tools for haptic feedback), advertising, or scientific publications. We will finally consider different means of display, such as a computer monitor, a mobile device, or an augmented reality display. The solutions that we envision will be prototyped and evaluated quantitatively and qualitatively with the intended users. This is an exciting new research direction for my research group. I’m hoping that this first foray into this topic will lead to a scientific publication and serve as the basis for a larger research program.
+Faculty supervisor:  VincentLévesque
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montreal, Québec
+Language: Either English or French
+Preferred start date: 2027-05-02 (yyyy-mm-dd)
+View Detail
+Apply"
+53850,Routing of vibration feedback in 3D printed objects,"Project ID 53850
+Routing of vibration feedback in 3D printed objects
+Vibrotactile feedback is often used in human-computer interaction to communicate information using the vibrations of an object, such as the vibration of a smartphone when a message is received. In most cases, the entire object vibrates against the hand. In this project, we will experiment with the design of 3D printed structures that can accentuate or dampen vibrations in order to make vibrations felt only at specific locations on a 3D printed object. A smartphone-shaped object, for example, could be printed in such a way that the vibrations coming from a vibrotactile actuator are only felt at the location of virtual buttons on the side of the smartphone. The main goal of the project will be to identify 3d-printable structures (also known as metamaterials) that can control the transmission of vibrations in an object. Time-permitting, the project may also explore practical applications of the concept as well as the design of software tools to facilitate printing such objects.
+Faculty supervisor:  VincentLévesque
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montreal, Québec
+Language: Either English or French
+Preferred start date: 2027-05-02 (yyyy-mm-dd)
+View Detail
+Apply"
+53852,Exploration of artistic applications of haptics,"Project ID 53852
+Exploration of artistic applications of haptics
+This project is part of an ongoing collaboration between me and a multidisciplinary artist that aims to explore artistic applications of haptic feedback. The project is an occasion for me to learn about how artists view haptics and what is needed for them to integrate it into their practice, and for an artist to learn about bleeding-edge haptic technologies and the science of haptic perception. Your role within this project will be to support this exploration , for example by creating haptic experiences, artworks, editing tools, haptic device prototypes, or making any other contribution to the project based on your own skills and interests.
+Faculty supervisor:  VincentLévesque
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montreal, Québec
+Language: Either English or French
+Preferred start date: 2027-05-02 (yyyy-mm-dd)
+View Detail
+Apply"
+54038,Creating an Online and Collaborative Database for Representing the Quebec Healthcare Innovation Ecosystem,"Project ID 54038
+Creating an Online and Collaborative Database for Representing the Quebec Healthcare Innovation Ecosystem
+The importance of innovation in the healthcare sector is widely recognized, in particular with regard to the challenges faced by the Quebec population and the complex needs of our healthcare system. Mechanisms are already in place in the Quebec ecosystem to stimulate and facilitate the process of creating, developing and adopting innovative solutions. In this context, this project focuses on maps, visual representations that, in our case, use graphs, diagrams or charts to present complex, multi-dimensional data. The advantage of maps is that they can be used to link known information to less visible mechanisms, or to highlight previously undiscovered knowledge. This Mitacs project forms part of a larger research initiative involving several master's and doctoral students. More specifically, the aim of this Mitacs internship project is to create the shell of the map. This shell may take the form of a graph-oriented database and will collect various types of information. This includes the type of stakeholder (e.g. start-up, spin-off, scale-up, university, college/cégep, incubator, accelerator, research centre, institute), the type of innovation (e.g. technological, social), places that have already tested the innovation (e.g. CIUSSS/CISSS, CHSLD, private residence), processes/protocols in place, public funding received and associated metrics. This project aims to create a demonstrator and is essentially programming-intensive. For reference, the project would typically be 70% back-end and 30% front-end, but this could shift towards a 50/50 split depending on the student's profile. Meetings with project partners and the ecosystem could be arranged to refine the backlog and validate the work completed in each sprint. The pre-project documentation is being finalised at the time of submitting this internship, and it may be possible to discuss it at an interview.
+Faculty supervisor:  JuliaGuérineau
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montréal, Québec
+Language: Either English or French
+Preferred start date: 2027-05-31 (yyyy-mm-dd)
+View Detail
+Apply"
+54111,Energy-Aware QoS Flexibility in Kubernetes-Based Cloud Systems,"Project ID 54111
+Energy-Aware QoS Flexibility in Kubernetes-Based Cloud Systems
+Cloud-native applications often rely on Kubernetes quality-of-service mechanisms to provide predictable execution for important services. These mechanisms are useful because they protect applications from resource interference and help maintain stable response time. However, strict service configurations can sometimes make the system too rigid, especially when some parts of the infrastructure are temporarily unused. This project investigates how Kubernetes-based systems can use runtime flexibility to improve energy efficiency while preserving service quality. Instead of focusing only on increasing or decreasing the resources assigned to an application, the project studies how predefined quality-of-service configurations can be managed more intelligently when workload demand and resource availability change. The main objective is to explore whether unused system capacity can be exploited in a controlled and safe manner to improve the energy-performance balance of cloud-native services. The project may involve deploying microservices, creating workload scenarios, observing performance behavior, analyzing system utilization, and measuring energy-related metrics. Artificial intelligence techniques, including reinforcement learning, may be explored to support adaptive decision-making. The expected outcome is an experimental study and prototype showing how controlled runtime flexibility can help cloud-native systems become more energy-aware without compromising service reliability.
+Faculty supervisor:  AbdelouahedGherbi
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montreal, Québec
+Language: Either English or French
+Preferred start date: 2027-05-03 (yyyy-mm-dd)
+View Detail
+Apply"
+54113,Energy-Efficient Cloud-Native Microservices Using AI-Based Resource Management,"Project ID 54113
+Energy-Efficient Cloud-Native Microservices Using AI-Based Resource Management
+Cloud-native applications are increasingly deployed as microservices on platforms such as Kubernetes. These applications often need to satisfy strict performance requirements, such as low response time and stable quality of service. To guarantee performance, microservices are commonly assigned fixed CPU resources. However, this static allocation can lead to unnecessary energy consumption when the workload changes and the reserved resources are not fully used. This project aims to explore how artificial intelligence, especially reinforcement learning, can improve CPU resource management for cloud-native microservices. The general idea is to dynamically adjust the CPU resources assigned to a microservice according to the current workload, observed response time, and quality-of-service requirements. The project will study how to reduce energy consumption while maintaining application performance. It may include deploying microservices in Kubernetes, generating different workload conditions, collecting performance metrics, measuring energy usage, and designing an intelligent resource management strategy. The objective is to develop and evaluate an adaptive approach that avoids unnecessary CPU usage while keeping the application within its performance target. This project contributes to sustainable cloud computing by investigating how AI-based resource management can make cloud-native infrastructures more energy efficient.
+Faculty supervisor:  AbdelouahedGherbi
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montreal, Québec
+Language: Either English or French
+Preferred start date: 2027-05-03 (yyyy-mm-dd)
+View Detail
+Apply"
+54114,Distributed IoT–Edge Infrastructure for Real-Time AI Applications,"Project ID 54114
+Distributed IoT–Edge Infrastructure for Real-Time AI Applications
+Modern intelligent systems increasingly rely on distributed IoT and edge-computing infrastructures to support real-time AI applications such as smart monitoring, industrial inspection, activity recognition, and intelligent sensing. While IoT devices generate large amounts of data, their limited computational and energy resources often prevent them from executing complex AI workloads locally. Edge computing offers an effective solution by providing nearby computing resources capable of supporting latency-sensitive applications. This project focuses on the design, implementation, and evaluation of a distributed IoT–edge platform where embedded devices and edge servers cooperate to execute AI workloads efficiently. The project will investigate how sensing devices, local AI inference modules, communication services, and edge-side orchestration mechanisms can work together to support adaptive workload distribution under changing operating conditions. The platform will include IoT devices equipped with cameras or sensors, communication mechanisms between devices and edge servers, resource monitoring capabilities, and edge-side orchestration services capable of coordinating task execution across multiple computing resources. Experimental studies will evaluate the impact of network conditions, device limitations, resource availability, and workload characteristics on overall system performance. The project combines embedded systems, networking, edge computing, and distributed systems engineering. The resulting platform will serve as a practical testbed for future research on intelligent IoT–edge infrastructures and adaptive AI deployment strategies.
+Faculty supervisor:  AbdelouahedGherbi
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montreal, Québec
+Language: Either English or French
+Preferred start date: 2027-05-03 (yyyy-mm-dd)
+View Detail
+Apply"
+54117,Adaptive AI Model Selection and Multi-Agent Learning for IoT–Edge Systems,"Project ID 54117
+Adaptive AI Model Selection and Multi-Agent Learning for IoT–Edge Systems
+Real-time AI applications operating across IoT and edge infrastructures must continuously balance competing objectives such as accuracy, latency, energy consumption, and resource utilization. Different AI models exhibit varying computational requirements and performance characteristics, making dynamic model selection and task placement critical challenges in distributed AI systems. This project focuses on the development of intelligent decision-making mechanisms that enable adaptive AI deployment in IoT–edge environments. The project will investigate how machine learning models with different accuracy–performance trade-offs can be combined with multi-agent reinforcement learning techniques to support autonomous decision-making. The work will include evaluating computer vision and perception models for tasks such as image classification, object detection, and activity recognition. These models will be benchmarked on both embedded and edge-computing platforms to characterize their computational costs and performance profiles. Building on these results, the project will develop multi-agent decision-making strategies capable of dynamically selecting AI models, controlling sensing rates, allocating resources, and determining where AI tasks should be executed. Reinforcement learning agents will learn adaptive policies that respond to changing system conditions, including network quality, resource availability, latency requirements, and workload demands. The resulting framework will provide an intelligent orchestration layer capable of improving system performance while maintaining application-level quality requirements in dynamic IoT–edge environments.
+Faculty supervisor:  AbdelouahedGherbi
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montreal, Québec
+Language: Either English or French
+Preferred start date: 2027-05-03 (yyyy-mm-dd)
+View Detail
+Apply"
+54243,Improving Developer Experience in Modern Software Observability Platforms,"Project ID 54243
+Improving Developer Experience in Modern Software Observability Platforms
+Modern software systems, particularly cloud-native and microservices-based applications, require advanced observability techniques to ensure reliability, performance, and maintainability. However, the developer experience (DX) of using observability tools like OpenTelemetry, Prometheus, Jaeger, and Grafana remains a major challenge. Developers struggle with setting up instrumentation, interpreting metrics, logs, and traces, and correlating these signals during debugging or performance analysis. This project aims to systematically study and enhance the usability and developer experience of open-source observability platforms. The project will include: * Conducting a developer-centric usability study of selected observability tools. * Identifying friction points through interviews, surveys, and heuristic evaluations. * Prototyping improvements (e.g., dashboards, CLI helpers, configuration abstractions). * Validating these improvements through user studies or field evaluations. This research contributes to software engineering by bridging the gap between tooling capabilities and real-world developer needs, without relying on artificial intelligence.
+Faculty supervisor:  FabioPetrillo
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montreal, Québec
+Language: Either English or French
+Preferred start date: 2027-05-03 (yyyy-mm-dd)
+View Detail
+Apply"
+54245,Improving video game test coverage with machine learning,"Project ID 54245
+Improving video game test coverage with machine learning
+Video games are complex software systems that demand developers several skills like AI, Programming, Computer Graphics, and Networks, and many more. Further, video games are challenging projects in terms of scope. In this respect, how to cover a high level of game scenarios without increasing the game test effort? A possible solution is to use Machine learning (ML) systems. Then, the used machine learning techniques might aid game developers and game testers by automatizing the video game test process. In this project, we will explore innovative ways to test video game scenarios by applying machine learning techniques (such as Reinforcement and Competitive Learning) to search for possible variations of user inputs and corner case behaviors on video game systems. Using different ML techniques, we will implement an experimental video game for training a model to auto-learn to play the game, generating test scenarios automatically and training dataset to an automatic testing system. Next, we will introduce controlled bugs in the original video game, and evaluate incrementally your approach. This project will produce the state of art of video game testing systems using Machine Learning techniques. All produced approaches will be applied on video game projects from student projects at UQAC to AAA video game projects, as Ubisoft Entertainment.
+Faculty supervisor:  FabioPetrillo
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montréal, Québec
+Language: Either English or French
+Preferred start date: 2027-05-03 (yyyy-mm-dd)
+View Detail
+Apply"
+54246,Improving Reliability of Distributed Service-Based Systems using Machine Learning,"Project ID 54246
+Improving Reliability of Distributed Service-Based Systems using Machine Learning
+Today, there are so many varieties of service-based applications, from the tinny ones to large distributed systems, whether as a client-server architecture or a microservice structure, there is a massive number of possibilities. That diversity comes up with many challenges, multiple ways to tackle them, and many technologies associated, such as Docker, Kubernetes, Service-Mesh, Envoy, Kafka, Quarkus, and others.
+Faculty supervisor:  FabioPetrillo
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montreal, Québec
+Language: Either English or French
+Preferred start date: 2027-05-03 (yyyy-mm-dd)
+View Detail
+Apply"
+54247,Implementing and Evaluating Game Server Solutions,"Project ID 54247
+Implementing and Evaluating Game Server Solutions
+Massive Multi-Player Online games (MMO) are one of the most profitable marketing in entertainment domain. MMOs connect millions of players each day in game campaigns extremely on sophisticated environments. However, MMO games impose several technical challenges to software engineers and system administration: real-time issues and scalability. To tackle that challenges, Google, in partnership with Ubisoft Entertainment, proposed Agones, an open-source project that uses Kubernetes to host and scale dedicated game servers. In this project, students will collaborate to instantiate and evaluate Agones to support MMOs. The principal purpose of this project is to create an evaluation environment to MMO game servers on software quality aspects, producing the state of art on game server practices. At the end of the internship, students will be able to work in AAA video game teams to implement complex MMO game servers.
+Faculty supervisor:  FabioPetrillo
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montreal, Québec
+Language: Either English or French
+Preferred start date: 2027-05-03 (yyyy-mm-dd)
+View Detail
+Apply"
+54248,Immersive Virtual Reality Environment to Video Game Development,"Project ID 54248
+Immersive Virtual Reality Environment to Video Game Development
+Virtual Reality (VR) is an important platform to support new interactive ways to improve productivity on high cognitive complex activities. Activities like mechanical maintenance, surgical procedures or financial decisions need multi-interactive visualizations. Further, VR can either support software complex software development activities, providing a cutting-edge state of art integrated environment systems (IDE). In this research project, we will develop a VR IDE prototype to evaluate an innovative way to integrate game assets like sprites, sounds or textures with pieces of code, helping developers and artists to combine complex elements in the same environment. The main objective is to evaluate VR constructors, widgets and frameworks to create the first VR IDE for game development. In addition, this project product will support students in the context of UQAC's bachelor with major on video game conception.
+Faculty supervisor:  FabioPetrillo
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montreal, Québec
+Language: Either English or French
+Preferred start date: 2027-05-03 (yyyy-mm-dd)
+View Detail
+Apply"
+54249,Visualizing and Understanding Modern Cloud-Native Software Architectures,"Project ID 54249
+Visualizing and Understanding Modern Cloud-Native Software Architectures
+Modern cloud-native systems—composed of microservices, APIs, containers, and orchestration platforms like Kubernetes—are difficult to understand, maintain, and evolve. This complexity can slow development and increase the risk of failure. However, students often lack hands-on experience working with such systems in a comprehensible and interactive way. This project aims to build and evaluate novel interactive software visualization tools that help developers better understand the architecture, behavior, and evolution of real-world cloud-native systems.
+Faculty supervisor:  FabioPetrillo
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montreal, Québec
+Language: Either English or French
+Preferred start date: 2027-05-03 (yyyy-mm-dd)
+View Detail
+Apply"
+54252,Using machine learning to identify noise aspects in log files,"Project ID 54252
+Using machine learning to identify noise aspects in log files
+Software systems in production generate data, services, and facilities for their users. But as it runs, it also needs to create other information about the system execution. The log files hold this information, which will be helpful to DevOps engineers, monitoring and observability systems, ensuring the good health of the system, preventing attacks, and even as a basis for investigating any system failures. What are the scenarios, settings, and data capable of generating noise in log files? What data characterize the information desired in the log files, and what information is unwanted? From a knowledge base about logs, one way to reach this objective is to apply Machine Learning (ML) techniques to analyze the lines of the log files to find the noises of these contained in them. In this project, we will research existing log libraries, interview system operators to understand the scenarios in which logs are used, and what information is desired and unwanted from these scenarios. Thus, we will build a Machine Learning (ML) model to evaluate the log files and their noise level from the collected responses. The project product will support students in the context of UQAC's bachelor with a major in software with knowledge in monitoring, logging, and machine learning.
+Faculty supervisor:  FabioPetrillo
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montréal, Québec
+Language: English
+Preferred start date: 2027-05-03 (yyyy-mm-dd)
+View Detail
+Apply"
+54384,Navigation et Surveillance Imperdables pour Véhicules Autonomes Aériens et Terrestres (NESIVA),"Project ID 54384
+Navigation et Surveillance Imperdables pour Véhicules Autonomes Aériens et Terrestres (NESIVA)
+This research project, entitled NESIVA, focuses on the development of resilient navigation and surveillance technologies for autonomous aerial and ground vehicles operating in GNSS-challenged environments. Many autonomous systems depend heavily on GNSS for positioning, navigation, and timing. However, GNSS signals are weak, vulnerable to interference, and often unavailable or degraded in dense urban areas, indoor environments, or contested operational conditions. The project will investigate the use of Signals of Opportunity (SoOP) as alternative sources of positioning and obstacle detection. These signals may include low Earth orbit satellite transmissions, whose number is rapidly increasing worldwide, as well as terrestrial communication signals such as 3G, 4G, 5G, and future 6G networks. By exploiting these existing signals in a passive and non-cooperative manner, NESIVA aims to support robust and resilient PNT capabilities without relying exclusively on GNSS. The LASSENA laboratory at ÉTS will contribute to the development of an intelligent universal SoOP receiver based on software-defined radio. The project will also explore multi-signal fusion, including LEO-SoOP and cellular signals, to provide a new generation of navigation and surveillance solutions for civil and military autonomous vehicles. The intern will participate in research activities related to signal acquisition, processing, receiver development, data analysis, and performance evaluation. This project offers an opportunity to work on a highly innovative topic at the intersection of satellite navigation, wireless communications, software-defined radio, autonomous systems, and resilient PNT technologies.
+Faculty supervisor:  Rene JrLandry
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montréal, Québec
+Language: Either English or French
+Preferred start date: 2027-05-03 (yyyy-mm-dd)
+View Detail
+Apply"
+54471,Enhancing Software Development Workflows with Agentic AI,"Project ID 54471
+Enhancing Software Development Workflows with Agentic AI
+Software development teams increasingly rely on a wide range of tools and processes to manage coding, testing, deployment, maintenance, and collaboration activities. While modern AI systems can automate individual tasks, there is still limited understanding of how autonomous AI agents can effectively coordinate and optimize entire software development workflows. This project aims to design, develop, and evaluate Agentic AI solutions that enhance software engineering workflows. The student will investigate how AI agents can support developers during various phases of software development, including requirements analysis, implementation, testing, code review, continuous integration, deployment, and maintenance. The project will explore the use of single-agent and multi-agent systems capable of autonomously performing software engineering tasks and collaborating with human developers. Particular attention will be given to improving workflow efficiency, reducing development bottlenecks, increasing software quality, and supporting developer decision-making. The student will design and implement prototype AI agents, integrate them into software development environments, and evaluate their effectiveness through empirical studies and experiments using open-source software projects. The project may also investigate challenges related to reliability, explainability, trust, and human oversight of autonomous agents. The outcomes of this research will contribute to the development of next-generation intelligent software engineering environments where human developers and AI agents work together to accelerate software delivery and improve software quality.
+Faculty supervisor:  AliOuni
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montreal, Québec
+Language: Either English or French
+Preferred start date: 2027-05-03 (yyyy-mm-dd)
+View Detail
+Apply"
+54473,Improving the Quality of Microservice-Based Systems Using Agentic AI,"Project ID 54473
+Improving the Quality of Microservice-Based Systems Using Agentic AI
+Microservice architectures have become the dominant paradigm for building large-scale cloud-native applications. While they provide flexibility, scalability, and independent deployment capabilities, they also introduce significant complexity. Developers must manage service dependencies, architectural drift, performance bottlenecks, technical debt, security vulnerabilities, testing challenges, and system evolution. Recent advances in Agentic AI have enabled the development of autonomous software engineering agents capable of performing complex tasks such as code analysis, bug detection, test generation, root cause analysis, architectural assessment, and automated software repair. However, the application of these agents to microservice quality assurance remains largely unexplored. This project aims to design and evaluate AI agents that continuously monitor, analyze, and improve the quality of microservice-based systems. The project will investigate how autonomous agents can identify architectural violations, detect microservice anti-patterns, recommend refactorings, improve test coverage, identify performance and reliability issues, and support software maintenance activities. The student will develop prototype agents and evaluate them using open-source microservice systems. The project will combine software analytics, large language models, and agent-based reasoning to create intelligent assistants capable of supporting developers throughout the lifecycle of microservice applications. The expected outcomes include new techniques, tools, and empirical evidence on the effectiveness of Agentic AI for improving software quality in modern distributed systems.
+Faculty supervisor:  AliOuni
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montreal, Québec
+Language: Either English or French
+Preferred start date: 2027-05-03 (yyyy-mm-dd)
+View Detail
+Apply"
+54476,Agentic AI and Model Context Protocol (MCP) for Intelligent Software Engineering,"Project ID 54476
+Agentic AI and Model Context Protocol (MCP) for Intelligent Software Engineering
+Recent advances in large language models have led to the emergence of AI agents capable of performing increasingly sophisticated software engineering tasks. However, the effectiveness of these agents depends largely on their ability to access relevant information and interact with the diverse tools used by software development teams. The Model Context Protocol (MCP) has recently emerged as a promising standard for enabling secure and standardized communication between AI agents and external software engineering resources. This project aims to explore how MCP can be leveraged to build intelligent software engineering agents capable of supporting developers throughout the software lifecycle. The project will investigate how agents can interact with code repositories, issue tracking systems, documentation platforms, CI/CD pipelines, testing frameworks, and other development tools through MCP-based integrations. The student will design, implement, and evaluate AI agents capable of performing tasks such as code analysis, automated code review, bug investigation, test generation, technical debt management, software maintenance, and development workflow automation. The project will also examine how MCP can facilitate collaboration among multiple agents and between human developers and AI agents. Particular attention will be given to challenges related to reliability, security, transparency, trustworthiness, and governance of agent-based software engineering systems. The project aims to contribute new knowledge, tools, and best practices for integrating MCP-enabled AI agents into modern software development environments. The outcomes of this research will help advance the next generation of intelligent development environments where developers and AI agents collaborate effectively to improve software quality and productivity.
+Faculty supervisor:  AliOuni
+Faculty Province: Québec
+Faculty University: École de Technologie Supérieure
+Faculty Campus: Montréal
+Project Location: Montreal, Québec
+Language: Either English or French
+Preferred start date: 2027-05-03 (yyyy-mm-dd)
+View Detail
+Apply"
