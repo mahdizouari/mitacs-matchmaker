@@ -7,30 +7,29 @@ import numpy as np
 
 # --- Setup & Configuration ---
 st.set_page_config(page_title="Mitacs AI Matchmaker", layout="wide")
-st.title("🎯 Mitacs Project Matchmaker (AI & DevOps Focus)")
+st.title("🎯 Mitacs Project Matchmaker")
 
-# Load the NLP Model (cached so it doesn't reload on every button click)
+# Load the NLP Model
 @st.cache_resource
 def load_model():
-    # all-MiniLM-L6-v2 is fast, free, and highly accurate for semantic matching
     return SentenceTransformer('all-MiniLM-L6-v2')
 
 model = load_model()
 
 # --- UI Components ---
-st.markdown("### 1. Upload Your Data")
-col1, col2 = st.columns(2)
+st.markdown("### 1. Upload Your CV")
+cv_file = st.file_uploader("Upload your CV (PDF)", type=['pdf'])
 
-with col1:
-    cv_file = st.file_uploader("Upload your CV (PDF)", type=['pdf'])
-
-with col2:
-    projects_file = st.file_uploader("Upload Mitacs Projects (CSV)", type=['csv'])
-    st.caption("Ensure your CSV has these columns: Project_ID, Title, Description")
+st.markdown("### 2. Set Your Preferences (Optional)")
+# Defaults to your AI/DevOps focus, but your friends can backspace and type their own!
+user_keywords = st.text_input(
+    "Any specific keywords you want the AI to focus on?",
+    value="Artificial Intelligence, Machine Learning, Deep Learning, DevOps, Docker, CI/CD, AWS, Cloud Infrastructure, Python"
+)
 
 # --- Processing Logic ---
 if st.button("Find My Top 10 Projects 🚀"):
-    if cv_file and projects_file:
+    if cv_file:
         with st.spinner("Analyzing CV and calculating semantic matches..."):
             
             # 1. Parse the CV
@@ -39,27 +38,30 @@ if st.button("Find My Top 10 Projects 🚀"):
                 for page in pdf.pages:
                     cv_text += page.extract_text() + "\n"
             
-            # 2. Inject AI & DevOps Bias
-            # This forces the AI vector to pivot away from ASP.NET/DW and prioritize your actual interests.
-            target_focus = """
-            PRIMARY FOCUS: Artificial Intelligence, Machine Learning, Deep Learning, 
-            DevOps, Docker, CI/CD, AWS, Cloud Infrastructure, Python, Algorithmic Trading.
-            """
-            cv_text_biased = cv_text + "\n" + target_focus
+            # 2. Inject Custom Bias
+            if user_keywords.strip():
+                cv_text += f"\nPRIMARY FOCUS AND PREFERENCES: {user_keywords}"
             
-            # 3. Read the Projects CSV and Extract Metadata
-            df = pd.read_csv(projects_file)
+            # 3. Read the default Projects CSV right from the repository
+            try:
+                df = pd.read_csv("mitacs_projects.csv")
+            except FileNotFoundError:
+                st.error("Error: 'mitacs_projects.csv' not found. Please make sure it is uploaded to GitHub.")
+                st.stop()
             
-            # Extract specific fields from the Description block into their own columns
-            df['Supervisor'] = df['Description'].str.extract(r'Faculty supervisor:\s*([^\n]*)')
-            df['Location'] = df['Description'].str.extract(r'Project Location:\s*([^\n]*)')
-            df['Language'] = df['Description'].str.extract(r'Language:\s*([^\n]*)')
-            df['Start_Date'] = df['Description'].str.extract(r'Preferred start date:\s*([^\n]*)')
-            
-            df['Combined_Text'] = df['Title'].fillna('') + " " + df['Description'].fillna('')
+            # Safely extract specific fields
+            if 'Description' in df.columns:
+                df['Supervisor'] = df['Description'].str.extract(r'Faculty supervisor:\s*([^\n]*)')
+                df['Location'] = df['Description'].str.extract(r'Project Location:\s*([^\n]*)')
+                df['Language'] = df['Description'].str.extract(r'Language:\s*([^\n]*)')
+                df['Start_Date'] = df['Description'].str.extract(r'Preferred start date:\s*([^\n]*)')
+                df['Combined_Text'] = df['Title'].fillna('') + " " + df['Description'].fillna('')
+            else:
+                st.error("The CSV must contain a 'Description' column.")
+                st.stop()
             
             # 4. Generate AI Embeddings
-            cv_embedding = model.encode([cv_text_biased])
+            cv_embedding = model.encode([cv_text])
             project_embeddings = model.encode(df['Combined_Text'].tolist())
             
             # 5. Calculate Cosine Similarity
@@ -73,13 +75,10 @@ if st.button("Find My Top 10 Projects 🚀"):
             st.success("Analysis Complete!")
             st.markdown("### 🏆 Your Top 10 Project Matches")
             
-            # Display beautifully using Streamlit dataframe with the new columns
             display_columns = [
                 'Match_Score', 'Project_ID', 'Title', 
                 'Supervisor', 'Location', 'Language', 'Start_Date', 'Description'
             ]
-            
-            # Only display columns that actually exist in the CSV to prevent errors
             existing_columns = [col for col in display_columns if col in top_10.columns]
             
             st.dataframe(
@@ -88,4 +87,4 @@ if st.button("Find My Top 10 Projects 🚀"):
                 use_container_width=True
             )
     else:
-        st.warning("Please upload both your CV and the Projects CSV to begin.")
+        st.warning("Please upload your CV to begin.")
