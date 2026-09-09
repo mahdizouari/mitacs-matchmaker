@@ -21,7 +21,7 @@ def run_scraper():
         input("👉 ONCE YOU SEE THE 35 PROJECTS, PRESS ENTER HERE TO START SCRAPING... ")
 
         # --- Scraping Pages ---
-        total_pages = 4
+        total_pages = 12
 
         for current_page in range(1, total_pages + 1):
             print(f"📄 Scraping Page {current_page}/{total_pages}...")
