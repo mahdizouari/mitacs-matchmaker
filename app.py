@@ -7,21 +7,48 @@ import numpy as np
 
 # --- Setup & Configuration ---
 st.set_page_config(page_title="Mitacs AI Matchmaker", layout="wide")
-st.title("🎯 Mitacs Project Matchmaker")
+st.title("🎯 Mitacs Project Matchmaker (Advanced Matching)")
 
-# Load the NLP Model
+# Load the NLP Model (Cached)
 @st.cache_resource
 def load_model():
     return SentenceTransformer('all-MiniLM-L6-v2')
 
 model = load_model()
 
+# Load and Process Projects (Cached)
+@st.cache_data
+def load_and_embed_projects():
+    try:
+        df = pd.read_csv("mitacs_projects.csv")
+    except FileNotFoundError:
+        return None, None, "Error: 'mitacs_projects.csv' not found."
+
+    # Check for the newly requested columns
+    target_columns = ['Project_Description', 'Student_Roles', 'Required_Skills', 'Project_Activities']
+    missing_cols = [col for col in target_columns if col not in df.columns]
+    
+    if missing_cols:
+        return df, None, f"Missing required columns in CSV: {', '.join(missing_cols)}"
+        
+    # Combine fields strategically. 
+    # We put Required_Skills and Student_Roles first so they aren't cut off by token limits.
+    df['Combined_Text'] = (
+        "Required Skills: " + df['Required_Skills'].fillna('') + ". " +
+        "Student Roles: " + df['Student_Roles'].fillna('') + ". " +
+        "Activities: " + df['Project_Activities'].fillna('') + ". " +
+        "Description: " + df['Project_Description'].fillna('')
+    )
+        
+    # Pre-compute all project embeddings
+    project_embeddings = model.encode(df['Combined_Text'].tolist())
+    return df, project_embeddings, "Success"
+
 # --- UI Components ---
 st.markdown("### 1. Upload Your CV")
 cv_file = st.file_uploader("Upload your CV (PDF)", type=['pdf'])
 
 st.markdown("### 2. Set Your Preferences (Optional)")
-# Defaults to your AI/DevOps focus, but your friends can backspace and type their own!
 user_keywords = st.text_input(
     "Any specific keywords you want the AI to focus on?",
     value="Artificial Intelligence, Machine Learning, Deep Learning, DevOps, Docker, CI/CD, AWS, Cloud Infrastructure, Python"
@@ -30,39 +57,28 @@ user_keywords = st.text_input(
 # --- Processing Logic ---
 if st.button("Find My Top 10 Projects 🚀"):
     if cv_file:
-        with st.spinner("Analyzing CV and calculating semantic matches..."):
+        with st.spinner("Analyzing CV against Skills, Roles, and Activities..."):
             
-            # 1. Parse the CV
+            # 1. Load cached dataset and embeddings
+            df, project_embeddings, status_msg = load_and_embed_projects()
+            
+            if project_embeddings is None:
+                st.error(status_msg)
+                st.stop()
+
+            # 2. Parse the CV
             cv_text = ""
             with pdfplumber.open(cv_file) as pdf:
                 for page in pdf.pages:
                     cv_text += page.extract_text() + "\n"
             
-            # 2. Inject Custom Bias
+            # 3. Inject Custom Bias (Prepend to avoid truncation)
+            final_cv_text = cv_text
             if user_keywords.strip():
-                cv_text += f"\nPRIMARY FOCUS AND PREFERENCES: {user_keywords}"
+                final_cv_text = f"PRIMARY SKILLS AND FOCUS: {user_keywords}\n\n" + cv_text
             
-            # 3. Read the default Projects CSV right from the repository
-            try:
-                df = pd.read_csv("mitacs_projects.csv")
-            except FileNotFoundError:
-                st.error("Error: 'mitacs_projects.csv' not found. Please make sure it is uploaded to GitHub.")
-                st.stop()
-            
-            # Safely extract specific fields
-            if 'Description' in df.columns:
-                df['Supervisor'] = df['Description'].str.extract(r'Faculty supervisor:\s*([^\n]*)')
-                df['Location'] = df['Description'].str.extract(r'Project Location:\s*([^\n]*)')
-                df['Language'] = df['Description'].str.extract(r'Language:\s*([^\n]*)')
-                df['Start_Date'] = df['Description'].str.extract(r'Preferred start date:\s*([^\n]*)')
-                df['Combined_Text'] = df['Title'].fillna('') + " " + df['Description'].fillna('')
-            else:
-                st.error("The CSV must contain a 'Description' column.")
-                st.stop()
-            
-            # 4. Generate AI Embeddings
-            cv_embedding = model.encode([cv_text])
-            project_embeddings = model.encode(df['Combined_Text'].tolist())
+            # 4. Generate AI Embedding for the CV
+            cv_embedding = model.encode([final_cv_text])
             
             # 5. Calculate Cosine Similarity
             similarities = cosine_similarity(cv_embedding, project_embeddings)[0]
@@ -75,10 +91,13 @@ if st.button("Find My Top 10 Projects 🚀"):
             st.success("Analysis Complete!")
             st.markdown("### 🏆 Your Top 10 Project Matches")
             
+            # Display the specific columns you care about
             display_columns = [
                 'Match_Score', 'Project_ID', 'Title', 
-                'Supervisor', 'Location', 'Language', 'Start_Date', 'Description'
+                'Required_Skills', 'Student_Roles', 'Project_Activities', 'Project_Description'
             ]
+            
+            # Only show columns that actually exist in the CSV to prevent crashes
             existing_columns = [col for col in display_columns if col in top_10.columns]
             
             st.dataframe(
